@@ -24,11 +24,7 @@ class TestVisitor:
         vis.name = "Warren"
         assert (vis.name == "Poppy")
 
-    # def test_raise_exception_for_changing_name(self):
-    #     '''raise exception for trying to change name after initialization'''
-    #     coffee = Coffee("Peppermint Mocha")
-    #     with pytest.raises(Exception):
-    #         coffee.name = 'Banana'
+
 
     def test_has_many__trips(self):
         '''Visitor has many Trips.'''

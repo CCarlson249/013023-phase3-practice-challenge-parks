@@ -34,9 +34,9 @@ class TestNationalParks:
         t_3 = Trip(vis, p2, "January 5th","January 20th")
 
         assert (len(p1.trips()) == 2)
-        assert (t_1 in p1.orders())
-        assert (t_2 in p1.orders())
-        assert (not t_3 in p1.orders())
+        assert (t_1 in p1.trips())
+        assert (t_2 in p1.trips())
+        assert (not t_3 in p1.trips())
 
     def test_trips_of_type_trips(self):
         '''National Park trips are of type '''
@@ -55,8 +55,8 @@ class TestNationalParks:
 
         p1 = NationalPark('Alaska Wilds')
         
-        t_1 = Trip(vis, p1, 2)
-        t_2 = Trip(vis2, p1, 5)
+        t_1 = Trip(vis, p1, "May 5th", "May 9th")
+        t_2 = Trip(vis2, p1, "May 20th","May 27th")
 
         assert (p1 in vis.nationalparks())
         assert (p1 in vis2.nationalparks())
